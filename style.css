@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1f2937;
   padding: 0 15%;
@@ -10,9 +14,10 @@ a {
 .nav {
   display: flex;
   margin-top: 1em;
+  gap: 2em;
 }
 .nav a {
-  color: #ffffff;
+  color: #f9faf8;
 }
 .nav--logo {
   display: flex;
@@ -22,8 +27,8 @@ a {
 }
 .nav--logo span {
   font-size: 42px;
-  font-weight: 900;
-  color: #ffffff;
+  color: #f9faf8;
+  font-family: "Rubik Bubbles", cursive;
 }
 .nav--logo img {
   height: 5em;
@@ -33,4 +38,35 @@ a {
   flex-flow: row wrap;
   align-content: center;
   gap: 2em;
+}
+
+.hero {
+  margin: 4em auto;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.hero--textbox {
+  flex: 1 0 400px;
+  color: #f9faf8;
+}
+.hero--textbox h1 {
+  font-size: 48px;
+}
+.hero--textbox .cat-button {
+  background-color: rgb(0, 124, 128);
+  border: 0;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  color: #f9faf8;
+  border-radius: 5px;
+  display: inline-block;
+}
+.hero--image {
+  flex: 1 1 400px;
+}
+.hero--image img {
+  max-width: 100%;
+  min-width: 400px;
+  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */

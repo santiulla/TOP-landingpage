@@ -1,4 +1,8 @@
-$white-text: #ffffff;
+$white-text: #f9faf8;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #1f2937;
@@ -12,6 +16,7 @@ a {
 .nav {
   display: flex;
   margin-top: 1em;
+  gap: 2em;
 
   a {
     color: $white-text;
@@ -27,8 +32,8 @@ a {
 
     span {
       font-size: 42px;
-      font-weight: 900;
       color: $white-text;
+      font-family: "Rubik Bubbles", cursive;
     }
 
     img {
@@ -43,5 +48,44 @@ a {
     flex-flow: row wrap;
     align-content: center;
     gap: 2em;
+  }
+}
+
+// hero
+
+.hero {
+  margin: 4em auto;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+
+  &--textbox {
+    flex: 1 0 400px;
+    color: $white-text;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    .cat-button {
+      background-color: rgb(0, 124, 128);
+      border: 0;
+      font-size: 20px;
+      padding: 0.5em 1em;
+      color: $white-text;
+      border-radius: 5px;
+      //   margin: 0.25em 0;
+      display: inline-block;
+    }
+  }
+
+  &--image {
+    flex: 1 1 400px;
+
+    img {
+      max-width: 100%;
+      min-width: 400px;
+      border-radius: 15px;
+    }
   }
 }
