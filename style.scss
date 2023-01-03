@@ -1,12 +1,18 @@
 $white-text: #f9faf8;
+$background-blue: #1f2937;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #1f2937;
-  padding: 0 15%;
+  background-color: $background-blue;
+  margin: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 a {
@@ -14,6 +20,8 @@ a {
 }
 
 .nav {
+  background-color: $background-blue;
+
   display: flex;
   margin-top: 1em;
   gap: 2em;
@@ -54,6 +62,7 @@ a {
 // hero
 
 .hero {
+  background-color: $background-blue;
   margin: 4em auto;
   display: flex;
   gap: 2em;
@@ -88,4 +97,10 @@ a {
       border-radius: 15px;
     }
   }
+}
+
+// Likes
+
+.like-div {
+  background-color: $white-text;
 }
