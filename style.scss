@@ -1,7 +1,47 @@
+$white-text: #ffffff;
+
 body {
   background-color: #1f2937;
   padding: 0 15%;
 }
 
-nav {
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  margin-top: 1em;
+
+  a {
+    color: $white-text;
+  }
+
+  //   logo
+
+  &--logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex: 1;
+
+    span {
+      font-size: 42px;
+      font-weight: 900;
+      color: $white-text;
+    }
+
+    img {
+      height: 5em;
+    }
+  }
+
+  // links
+
+  &--links {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 2em;
+  }
 }
