@@ -1,5 +1,6 @@
 $white-text: #f9faf8;
 $background-blue: #1f2937;
+$background-lightblue: #19b8aa;
 
 * {
   box-sizing: border-box;
@@ -102,5 +103,31 @@ a {
 // Likes
 
 .like-div {
-  background-color: $white-text;
+  background-color: $background-lightblue;
 }
+
+.like {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  &--title {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  &--card {
+    max-width: 20%;
+    flex: 0 1 auto;
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// quote
