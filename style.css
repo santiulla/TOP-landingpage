@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 body {
@@ -8,8 +9,7 @@ body {
 }
 
 .container {
-  max-width: 940px;
-  margin: 0 auto;
+  padding: 0 20%;
 }
 
 a {
@@ -79,5 +79,85 @@ a {
 }
 
 .like-div {
+  background-color: #19b8aa;
+  padding: 100px 0;
+}
+
+.like {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.like--title {
+  text-align: center;
+  padding: 20px 0;
+  color: #f9faf8;
+}
+.like--card {
+  max-width: 20%;
+  flex: 0 1 auto;
+}
+.like--card img {
+  max-width: 100%;
+}
+.like--card p {
+  margin-bottom: 30px;
+}
+
+.quote {
   background-color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 20%;
+  color: #1f2937;
+}
+.quote--text {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.quote--author {
+  text-align: end;
+}
+
+.cont-call {
+  padding: 100px 0;
+  background-image: url(https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2022-08/hl-yp-cats-579652.jpg?h=a0b0b8d2&itok=Ha4SyumM);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.call {
+  background-color: #19b8aa;
+  border-radius: 20px;
+  padding: 2em 4em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 0 auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.call--text {
+  color: #f9faf8;
+}
+.call--button {
+  background-color: #f9faf8;
+  padding: 1em 2em;
+  border-radius: 20px;
+  color: #1f2937;
+  font-weight: 700;
+  text-align: center;
+}
+
+footer {
+  background-color: #19b8aa;
+  color: #f9faf8;
+  padding: 20px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

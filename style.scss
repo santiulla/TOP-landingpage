@@ -4,6 +4,7 @@ $background-lightblue: #19b8aa;
 
 * {
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 body {
@@ -12,8 +13,7 @@ body {
 }
 
 .container {
-  max-width: 940px;
-  margin: 0 auto;
+  padding: 0 20%;
 }
 
 a {
@@ -104,6 +104,7 @@ a {
 
 .like-div {
   background-color: $background-lightblue;
+  padding: 100px 0;
 }
 
 .like {
@@ -113,7 +114,8 @@ a {
 
   &--title {
     text-align: center;
-    padding: 12px 0;
+    padding: 20px 0;
+    color: $white-text;
   }
 
   &--card {
@@ -131,3 +133,68 @@ a {
 }
 
 // quote
+
+.quote {
+  background-color: $white-text;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 20%;
+
+  color: #1f2937;
+
+  &--text {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  &--author {
+    text-align: end;
+  }
+}
+
+// call to action
+
+.cont-call {
+  padding: 100px 0;
+  background-image: url(https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2022-08/hl-yp-cats-579652.jpg?h=a0b0b8d2&itok=Ha4SyumM);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.call {
+  background-color: $background-lightblue;
+  border-radius: 20px;
+  padding: 2em 4em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 0 auto;
+  max-width: fit-content;
+
+  &--text {
+    color: $white-text;
+  }
+
+  &--button {
+    background-color: $white-text;
+    padding: 1em 2em;
+    border-radius: 20px;
+    color: #1f2937;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+// footer
+
+footer {
+  background-color: $background-lightblue;
+  color: $white-text;
+  padding: 20px;
+  text-align: center;
+}
